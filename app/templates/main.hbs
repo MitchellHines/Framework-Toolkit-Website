@@ -1,0 +1,42 @@
+<div style="width: 80%">
+		{{#paper-card as |card|}}
+		  {{card.image class="main_logo" src="assets/images/Capgemini_Logo_2COL_CMYK.png" alt="Washed Out" title="Washed Out"}}
+		  {{#card.title as |title|}}
+		    {{#title.text as |text|}}
+		      {{#text.headline}}Capgemini Government Solutions{{/text.headline}}
+		    {{/title.text}}
+		  {{/card.title}}
+	  {{#card.content}}
+	    <p>
+        Capgemini Government Solutions created this automated testing accelerator as a tool for internal Capgemini employees and external clients to access all the resources necessary to build out an automated testing framework.
+      </p>
+      <p>
+		Capgemini, a global leader in consulting, technology and outsourcing services leverages over 190,000 employees in 40 countries to deliver a wide range of technological solutions. Capgemini provides full testing services employing Agile processes across functional, performance, interoperability, and automated testing capabilities.
+		In addition to our presence among Fortune 100 companies, our direct experience in the public sector offers a unique perspective and understanding of the critical challenges facing the Federal Government. Capgemini Government Solutions LLC was established to deliver Capgemini’s global capabilities to U.S. Federal government clients while also meeting the Government’s data, security, and regulatory requirements.
+      </p>
+	  {{/card.content}}
+	  {{#card.actions}}
+	    {{!-- {{#paper-button}}Action 1{{/paper-button}} --}}
+	    {{!-- {{#paper-button}}Action 2{{/paper-button}} --}}
+	  {{/card.actions}}
+	{{/paper-card}}
+	
+	{{#paper-card as |card|}}
+	  {{card.image class="main_logo" src="assets/images/USCIS.jpg" alt="Washed Out" title="Washed Out"}}
+	  {{#card.title as |title|}}
+	    {{#title.text as |text|}}
+	      {{#text.headline}}USCIS: U.S. Citizenship and Immigration Services{{/text.headline}}
+	    {{/title.text}}
+	  {{/card.title}} 
+	  {{#card.content}}
+	    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+	  {{/card.content}}
+	  {{#card.actions}}
+	    {{!-- {{#paper-button}}Action 1{{/paper-button}} --}}
+	    {{!-- {{#paper-button}}Action 2{{/paper-button}} --}}
+	  {{/card.actions}}
+	{{/paper-card}}
+</div>
+{{outlet}}

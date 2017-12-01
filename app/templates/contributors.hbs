@@ -1,0 +1,66 @@
+<div style="width: 90%">
+<h1 class="md-display-2" align="center">Contributors</h1>
+	<div class="layout-row layout-xs-column">
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{card.image src="assets/images/Leezan.jpg" alt="Leezan Ali" title="Leezan Ali"}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Leezan Ali{{/text.headline}}
+	        {{/title.text}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>Consultant for Capgemini</p>
+	        <p>Knows everything</p>
+	        <p>Great at her job</p>
+	      {{/card.content}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{card.image src="assets/images/Michael.jpg" alt="Michael Perleoni" title="Michael Perleoni"}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Michael Perleoni{{/text.headline}}
+	        {{/title.text}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>Consultant for Capgemini</p>
+	        <p>Really tall</p>
+	        <p>Great at his job</p>
+	      {{/card.content}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{card.image src="assets/images/Mitchell.jpg" alt="Mitchell Hines" title="Mitchell Hines"}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Mitchell Hines{{/text.headline}}
+	        {{/title.text}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>Consultant for Capgemini</p>
+	        <p>Recently graduated from JMU</p>
+	        <p>Great at his job</p>
+	      {{/card.content}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{card.image src="assets/images/Shawn.jpg" alt="Shawn Davis" title="Shawn Davis"}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Shawn Davis{{/text.headline}}
+	        {{/title.text}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>Senior Consultant for Capgemini</p>
+	        <p>Recently Married</p>
+	        <p>Great at his job</p>
+	      {{/card.content}}
+	    {{/paper-card}}
+	  </div>
+	</div>
+</div>
+{{outlet}}
