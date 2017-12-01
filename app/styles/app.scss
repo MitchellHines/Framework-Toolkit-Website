@@ -1,0 +1,54 @@
+// app.scss
+
+// Define desired color palettes.
+$primary: "indigo";
+$accent: "light-blue";
+$warn: "blue-grey";
+// $background: ;
+$link: "blue";
+
+$dark: false;
+$default-color: '500';
+
+$foreground: "foreground-dark";
+$foreground-shadow: "grey";
+
+$base-background-color: white;
+$base-color: rgba(0, 0, 0, 0.87);
+
+// If desired, import the palettes and modify to your liking.
+@import "color-palette";
+$color-teal: map-merge($color-teal, ('contrastDefaultColor':  $light-contrast-color));
+$color-light-green: map-merge($color-light-green, ('contrastDefaultColor':  $light-contrast-color));
+
+// Import the rest of ember-paper.
+@import "ember-paper";
+
+// Import or define the rest of your application's styles.
+
+.main_logo {
+	width: 75%;
+	margin: 100px;
+}
+
+.logo_spade_small {
+	width: 80px;
+	margin-top: 20px;
+}
+
+.logo_spade_smaller {
+	height: 80%;
+	margin: 10px;
+}
+
+.shadowed {
+	box-shadow: 2px 2px 2px grey;
+}
+
+.cucumber_full_logo {
+	height: 85px;
+}
+
+.maven_logo {
+	height: 90px;
+}

@@ -1,0 +1,66 @@
+<div style="width: 80%">
+	<div class="layout-row">
+
+	</div>
+	<div class="layout-row">
+		{{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Ruby Framework{{/text.headline}}
+          {{#text.subhead}}Programming Language{{/text.subhead}}
+        {{/title.text}}
+        {{title.media size="lg" src="assets/images/Ruby.png" alt="Ruby Logo" title="Ruby Logo"}}
+      {{/card.title}}
+      {{#card.content}}
+      	<h2>Instructions</h2>
+		    {{#paper-item class="md-3-line md-long-text"}}
+		      <div class="md-list-item-text">
+		        <h3>Step 1: Download Repository</h3>
+		        <p>
+		          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+		          Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
+		          velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		        </p>
+		      </div>
+		    {{/paper-item}}
+		    {{#paper-item class="md-3-line md-long-text"}}
+		      <div class="md-list-item-text">
+		        <h3>Step 2: ...</h3>
+		        <p>
+		          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+		          Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
+		          velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		        </p>
+		      </div>
+		    {{/paper-item}}
+		    {{#paper-item class="md-3-line md-long-text"}}
+		      <div class="md-list-item-text">
+		        <h3>Step 3: ...</h3>
+		        <p>
+		          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+		          Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
+		          velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		        </p>
+		      </div>
+		    {{/paper-item}}
+		    {{#paper-item class="md-3-line md-long-text"}}
+		      <div class="md-list-item-text">
+		        <h3>Step 4: ...</h3>
+		        <p>
+		          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
+		          Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
+		          velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		        </p>
+		      </div>
+		    {{/paper-item}}
+      {{/card.content}}
+      {{#card.actions}}
+        {{#paper-button href="https://github.com/MitchellHines/Framework-Toolkit/tree/master/RubyFramework" target="_blank"}}Github Framework{{/paper-button}}
+      {{/card.actions}}
+    {{/paper-card}}
+	</div>
+	<div class="layout-row">
+
+	</div>
+</div>
+{{outlet}}

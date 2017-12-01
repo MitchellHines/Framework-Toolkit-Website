@@ -1,5 +1,87 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#paper-toolbar class="shadowed"}}
+  {{#paper-toolbar-tools}}
+    {{#paper-sidenav-toggle name="left" as |toggleAction|}}
+      {{#paper-button iconButton=true classNames="hide-gt-sm" onClick=(action toggleAction)}}
+        {{paper-icon "menu"}}
+      {{/paper-button}}
+      <h2>Framework Toolkit</h2>
+    {{/paper-sidenav-toggle}}
+    <span class="flex"></span>
+    {{!-- {{#paper-item class="md-2-line"}} --}}
+      {{!-- <img src="assets/images/Capgemini_Logo_Black_CMYK.png" alt="Capgemini Logo" class="logo_small"/> --}}
+    {{!-- {{/paper-item}} --}}
+    <span class="flex"></span>
+    <img src="assets/images/Capgemini_Spade_2COL_CMYK.png" alt="Capgemini Logo Spade" class="logo_spade_smaller"/>
+  {{/paper-toolbar-tools}}
+{{/paper-toolbar}}
+ 
+ {{#paper-sidenav-container class="inner-sidenav"}}
 
-{{outlet}}
+    {{#paper-sidenav
+      class="md-whiteframe-z2"
+      name="left"
+      open=leftSideBarOpen
+      onToggle=(action (mut leftSideBarOpen))}}
+      {{#if leftSideBarOpen}}
+        {{#paper-toolbar class="shadowed" as |toolbar|}}
+          {{#paper-sidenav-toggle name="left" as |toggleAction|}}
+            <div class="layout-fill layout-align-start-center layout-column">
+              <img src="assets/images/Capgemini_Spade_2COL_CMYK.png" alt="Capgemini Logo Spade" class="logo_spade_small"/> 
+              <h3>Framework Toolkit</h3>
+            </div>
+          {{/paper-sidenav-toggle}}
+          
+        {{/paper-toolbar}}
+      {{/if}}
+      {{#paper-content}}
+        {{#paper-list}}
+          
+          {{#paper-item class="md-2-line" onClick=(action "transitionToHome")}}
+            {{paper-icon "home" class="md-avatar-icon" accent=true}}
+            <div class="md-list-item-text">
+              Home
+            </div>
+          {{/paper-item}}
+
+          {{paper-divider}}
+
+          {{#paper-item class="md-2-line" onClick=(action "transitionToAbout")}}
+            {{paper-icon "info outline" class="md-avatar-icon"}}
+            <div class="md-list-item-text">
+              About
+            </div>
+          {{/paper-item}}
+
+          {{paper-divider}}
+
+          {{#paper-item class="md-2-line" onClick=(action "transitionToFrameworks")}}
+            {{paper-icon "group work" class="md-avatar-icon"}}
+            <div class="md-list-item-text">
+              Frameworks
+            </div>
+          {{/paper-item}}
+
+          {{paper-divider}}
+
+          {{#paper-item class="md-2-line" onClick=(action "transitionToContributors")}}
+            {{paper-icon "people" class="md-avatar-icon"}}
+            <div class="md-list-item-text">
+              <h3>Contributors</h3>
+            </div>
+          {{/paper-item}}
+
+          {{paper-divider}}
+
+        {{/paper-list}}
+      {{/paper-content}}
+    {{/paper-sidenav}}
+
+    {{#paper-card-content class="flex"}}
+      <div class="layout-fill layout-align-start-center layout-column">
+        {{outlet}}
+      </div>
+    {{/paper-card-content}}
+
+  {{/paper-sidenav-container}}
+
+

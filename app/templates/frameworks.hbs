@@ -1,0 +1,136 @@
+<div style="width: 95%">
+	<div class="layout-row">
+		<h1 class="md-display-2" align="center">Frameworks</h1>
+	</div>
+	<div class="layout-row layout-xs-column">
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Ruby{{/text.headline}}
+	          {{#text.subhead}}Programming Language{{/text.subhead}}
+	        {{/title.text}}
+	        {{title.media size="md" src="assets/images/Ruby.png" alt="Ruby Logo" title="Ruby Logo"}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>
+	          Ruby is an open source, object-oriented programming language that supports multiple programming paradigms.  Ruby is a popular choice among coders due to its succinct and flexible syntax.
+	        </p>
+	      {{/card.content}}
+	      {{#card.actions}}
+	        {{#paper-button onClick=(action "transitionToRuby")}}More Info{{/paper-button}}
+	        {{#paper-button href="https://github.com/MitchellHines/Framework-Toolkit/tree/master/RubyFramework" target="_blank"}}Github Framework{{/paper-button}}
+	      {{/card.actions}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	    {{#paper-card as |card|}}
+	    	{{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Python{{/text.headline}}
+	          {{#text.subhead}}Programming Language{{/text.subhead}}
+	        {{/title.text}}
+	        {{title.media size="md" src="assets/images/Python.png" alt="Python Logo" title="Python Logo"}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>
+	          Python is an open source programming language that is popular due to its compact modularity and design philosophy that emphasizes code readability. Python is commonly used for scientific computing and as a scripting language for web applications.
+	        </p>
+	      {{/card.content}}
+	      {{#card.actions}}
+	        {{#paper-button onClick=(action "transitionToPython")}}More Info{{/paper-button}}
+	        {{#paper-button}}Github Framework{{/paper-button}}
+	      {{/card.actions}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	  		{{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Java{{/text.headline}}
+	          {{#text.subhead}}Programming Language{{/text.subhead}}
+	        {{/title.text}}
+	        {{title.media size="md" src="assets/images/Java.png" alt="Java Logo" title="Java Logo"}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>
+	          Java technology is used to develop applications for a wide range of environments, from consumer devices to heterogeneous enterprise systems.  
+	        </p>
+	      {{/card.content}}
+	      {{#card.actions}}
+	        {{#paper-button onClick=(action "transitionToJava")}}More Info{{/paper-button}}
+	        {{#paper-button href="https://github.com/MitchellHines/Framework-Toolkit/tree/master/JavaFramework" target="_blank"}}Github Framework{{/paper-button}}
+	      {{/card.actions}}
+	    {{/paper-card}}
+	  </div>
+	</div>
+	<div class="layout-row">
+		<h1 class="md-display-2" align="center">Automation Tools</h1>
+	</div>
+	<div class="layout-row layout-xs-column">
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Maven{{/text.headline}}
+	          {{#text.subhead}}Automation Building Tool{{/text.subhead}}
+	        {{/title.text}}
+	        {{title.media size="md" src="assets/images/Maven.png" alt="Maven Logo" title="Maven Logo"}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>
+	          Maven is a build tool and it performs task just like Ant which is again a different build Tool. It is a software project management tool which provides new concept of project object model (POM). 
+	        </p>
+	      {{/card.content}}
+	      {{#card.actions}}
+	        {{!-- {{#paper-button}}More Info{{/paper-button}} --}}
+	        {{!-- {{#paper-button}}Github Framework{{/paper-button}} --}}
+	      {{/card.actions}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	    {{#paper-card as |card|}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Cucumber{{/text.headline}}
+	          {{#text.subhead}}Automation Testing Tool{{/text.subhead}}
+	        {{/title.text}}
+	        {{title.media size="md" src="assets/images/Cucumber.png" alt="Cucumber Logo" title="Cucumber Logo"}}
+	        {{!-- <img src="assets/images/Cucumber.png" alt="Cucumber Logo" class="cucumber_logo"/>  --}}
+
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>
+						Cucumber tools also support Behavior Driven Development. It offers a way to write tests that anybody can understand, regardless of their technical knowledge. 
+	        </p>
+	      {{/card.content}}
+	      {{#card.actions}}
+	        {{!-- {{#paper-button}}More Info{{/paper-button}} --}}
+	        {{!-- {{#paper-button}}Github Framework{{/paper-button}} --}}
+	      {{/card.actions}}
+	    {{/paper-card}}
+	  </div>
+	  <div class="layout-column flex">
+	  	{{#paper-card as |card|}}
+	      {{#card.title as |title|}}
+	        {{#title.text as |text|}}
+	          {{#text.headline}}Selenium{{/text.headline}}
+	          {{#text.subhead}}Software Testing Framework{{/text.subhead}}
+	        {{/title.text}}
+	        {{title.media size="md" src="assets/images/Selenium.png" alt="Selenium Logo" title="Selenium Logo"}}
+	      {{/card.title}}
+	      {{#card.content}}
+	        <p>
+	          Selenium is a free (open source) automated testing suite for web applications across different browsers and platforms. Testing done using Selenium tool is usually referred as Selenium Testing. 
+	        </p>
+	      {{/card.content}}
+	      {{#card.actions}}
+	        {{!-- {{#paper-button}}More Info{{/paper-button}} --}}
+	        {{!-- {{#paper-button}}Github Framework{{/paper-button}} --}}
+	      {{/card.actions}}
+	    {{/paper-card}}
+
+	  </div>
+	</div>
+</div>
+{{outlet}}
