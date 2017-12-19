@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'Framework-Toolkit-Website',
+    modulePrefix: 'framework-toolkit',
     environment,
     rootURL: '/',
     locationType: 'auto',
